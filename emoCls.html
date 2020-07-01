@@ -42,22 +42,22 @@
 
 <form>
     <h4>请输入你的问题：</h4>
-  <!--% if title %} --}
+  <!--% if title %} -->
     <textarea type="text" name="title" style="height:50px;width:820px;">{{title}}</textarea>
-    {% else %}
+  <!--   {% else %}  -->
     <textarea type="text" name="title" style="height:50px;width:820px;"></textarea>
-    {% endif %}
+   <!--  {% endif %}  -->
 	<br />
     <h4>请输入备选答案：</h4>
-    {% if replies %}
+  <!--   {% if replies %}  -->
     <textarea type="text" name="replies" style="height:300px;width:820px;" >{{replies}}</textarea>
-    {% else %}
+  <!--   {% else %}  -->
     <textarea type="text" name="replies" style="height:300px;width:820px;" ></textarea>
-    {% endif %}
+   <!--  {% endif %}   -->
 	<br />
 	<input type="submit" value="Submit" />
 </form>
-{% if message %}
+<!-- {% if message %}  -->
 <br />
 <h4>ECS 情感分类结果:</h4>
 <p style="color:blue">{{ message }}</p>
